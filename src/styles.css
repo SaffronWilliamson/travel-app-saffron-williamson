@@ -1,10 +1,15 @@
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #eeeef9;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .grid {
@@ -14,20 +19,69 @@ body {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 .grid-2-col {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-col-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-body p {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #272044;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
+
 section {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 70px 0 50px 0;
+  padding: 70px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
 }
 
 header {
@@ -97,6 +151,22 @@ main h2 {
 main h3 {
   font-weight: 700;
   font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
   line-height: 1.5;
   color: #272044;
   margin: 0;
@@ -188,7 +258,6 @@ hr {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-
   section {
     padding: 30px;
   }
